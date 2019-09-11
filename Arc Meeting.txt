@@ -1,0 +1,5 @@
+9/10/19
+ - Documented old Talus wiring.
+ - Took apart old wiring.
+ - Numbered every motor (and cable) on Talus
+ - Discussed possible head fixes/replacement parts.

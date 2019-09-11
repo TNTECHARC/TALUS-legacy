@@ -6,5 +6,5 @@ Wiring for Talus using the arduino is described in the Wiring Layout.xlsx
 Photos of the wiring from several angles are in the "Photos of Wiring" folder.
 
 # Demonstration Documentation
-All written notes of Talus operation is in Documentation.docx
+All written notes of Talus operation is in Documentation.txt
 
