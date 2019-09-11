@@ -1,10 +1,13 @@
 # Talus
 Documentation and code for the ARC Talus team's Makerspace AI greeter.
+
 [Documentation Prior to Fall 2019 Semester](https://github.com/TNTECHARC/Talus/tree/master/Before%20Fall%202019 "Old Documentation")
+
 [Arc Meeting Record](./Arc%20Meeting.txt)
+
 ## Have a Suggestion
 Tell us what you think Talus should do!
-https://docs.google.com/forms/d/e/1FAIpQLSeFa8XaVLIra4dBYN972fmorVdxVl_9EeBlFkYPPKFkGGHmSQ/viewform?usp=sf_link
+[Form](https://docs.google.com/forms/d/e/1FAIpQLSeFa8XaVLIra4dBYN972fmorVdxVl_9EeBlFkYPPKFkGGHmSQ/viewform?usp=sf_link)
 
 ---
 
