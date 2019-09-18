@@ -3,3 +3,7 @@
  - Took apart old wiring.
  - Numbered every motor (and cable) on Talus
  - Discussed possible head fixes/replacement parts.
+
+9/17/2019
+ - Wired Servo Controller On Talus
+ - Cleaned Up Talus Wiring
