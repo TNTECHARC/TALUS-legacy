@@ -7,3 +7,7 @@
 9/17/2019
  - Wired Servo Controller On Talus
  - Cleaned Up Talus Wiring
+
+9/26/2019
+ - Figured Through the Power Supply
+ - Identified the Servo's Power Rating

@@ -1,0 +1,5 @@
+MG996R
+HS805bb
+Raspberry Pi 3B+
+PCA9685
+--Unidentified 30A 5V Power Supply--
