@@ -1,13 +1,26 @@
-9/10/19
+09/10/19
  - Documented old Talus wiring.
  - Took apart old wiring.
  - Numbered every motor (and cable) on Talus
  - Discussed possible head fixes/replacement parts.
 
-9/17/2019
+09/17/2019
  - Wired Servo Controller On Talus
  - Cleaned Up Talus Wiring
 
-9/26/2019
+09/26/2019
  - Figured Through the Power Supply
  - Identified the Servo's Power Rating
+
+10/08/2019
+ - Wired Power Supply To Servo Board
+ - Updated Raspbian for RPi3
+ - Finalized Wiring for Servo I2C board
+ - Tested Power and Heat
+ - Finalized Plans For Talus's Jaw
+ - Decommissioned Old Face Plate
+ - Began Redesigning Face Plate
+ - Added Remote Login Interface
+ - Reconfigured the RPi3 to Survive TNTech Wifi Drops
+ - Planned Wiring For Eyes
+ - First Run-Through of Submissions for Talus Actions

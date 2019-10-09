@@ -12,15 +12,15 @@ Tell us what you think Talus should do!
 ---
 
 ## Goals for Fall 2019
-| Goal            									| Status  |
-| :-------------: 									| :-----: |
-| [Alexa Setup](#alexa-setup)    					| Started |
-| [Alexa Custom Wake](#alexa-custom-wake)			| Planned |
-| [Alexa Custom Commands](#alexa-custom-commands)	| Planned |
-| [Raspberry Pi Wiring](#raspberry-pi-wiring)		| Started |
-| [Alexa Moving Motors](#alexa-moving-motors)		| Planned |
-| [RGB Eyes](#rgb-eyes)								| Planned |
-| [Alexa Eyes](#alexa-eyes) 						| Planned |
+| Goal            									| Status   |
+| :-------------: 									| :-----:  |
+| [Alexa Setup](#alexa-setup)    					| Started  |
+| [Alexa Custom Wake](#alexa-custom-wake)			| Planned  |
+| [Alexa Custom Commands](#alexa-custom-commands)	| Planned  |
+| [Raspberry Pi Wiring](#raspberry-pi-wiring)		| Finished |
+| [Alexa Moving Motors](#alexa-moving-motors)		| Planned  |
+| [RGB Eyes](#rgb-eyes)								| Planned  |
+| [Alexa Eyes](#alexa-eyes) 						| Started  |
 
 ### Alexa Setup
 Setting Up a Raspberry Pi 3B+ or 4 to run Amazon's [Alexa](https://developer.amazon.com/alexa).
@@ -39,8 +39,8 @@ You can tell us your idea for Talus to do [here](https://docs.google.com/forms/d
 
 ### Raspberry Pi Wiring
 We have several new servo boards purchased. We have already taken apart the previous wiring. 
-The plan is to take the new servo boards, set them up by servo number, plug them in to the RPi in sets of 5 on the Raspberry Pi GPIO.
-Finally we will plug in the power supply into the main body servo board. The hands servo board will be addressed later.
+The new servo boards are set up by servo number (Sets of 4). The servo board is plugged in on the Raspberry Pi GPIO (3.3V).
+The power supply is plugged into the main body servo board (5V). The hands servo board will be addressed later.
 
 ### Alexa Moving Motors
 After setting up all of the wiring, we will try and recreate a similar project to [this](https://www.instructables.com/id/Animate-a-Billy-Bass-Mouth-With-Any-Audio-Source/) for the movement.
