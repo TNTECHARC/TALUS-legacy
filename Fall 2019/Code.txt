@@ -1,0 +1,5 @@
+Currently Used Python Library For PCA9685
+https://github.com/adafruit/Adafruit_Python_PCA9685
+
+Currently Used C++ Library For PCA9685
+https://github.com/vanvught/rpidmx512/tree/master/lib-pca9685

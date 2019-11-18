@@ -3,8 +3,7 @@ Documentation and code for the ARC Talus team's Makerspace AI greeter.
 
 [Documentation Prior to Fall 2019 Semester](https://github.com/TNTECHARC/Talus/tree/master/Before%20Fall%202019 "Old Documentation")
 
-[Arc Meeting Record](./Arc%20Meeting.txt)
-[Parts List](./Parts.txt)
+[Arc Meeting Record](./Arc%20Meeting.txt) | [Parts List](./Parts.txt) | [Coding](./Fall 2019/Code.txt)
 ## Have a Suggestion
 Tell us what you think Talus should do!
 [Form](https://docs.google.com/forms/d/e/1FAIpQLSeFa8XaVLIra4dBYN972fmorVdxVl_9EeBlFkYPPKFkGGHmSQ/viewform?usp=sf_link)
@@ -14,13 +13,18 @@ Tell us what you think Talus should do!
 ## Goals for Fall 2019
 | Goal            									| Status   |
 | :-------------: 									| :-----:  |
-| [Alexa Setup](#alexa-setup)    					| Started  |
+| [Raspberry Pi Wiring](#raspberry-pi-wiring)		| Finished |
+| [Alexa Setup](#alexa-setup)    					| Planned  |
 | [Alexa Custom Wake](#alexa-custom-wake)			| Planned  |
 | [Alexa Custom Commands](#alexa-custom-commands)	| Planned  |
-| [Raspberry Pi Wiring](#raspberry-pi-wiring)		| Finished |
 | [Alexa Moving Motors](#alexa-moving-motors)		| Planned  |
 | [RGB Eyes](#rgb-eyes)								| Planned  |
 | [Alexa Eyes](#alexa-eyes) 						| Started  |
+
+### Raspberry Pi Wiring
+We have several new servo boards purchased. We have already taken apart the previous wiring. 
+The new servo boards are set up by servo number (Sets of 4). The servo board is plugged in on the Raspberry Pi GPIO (3.3V).
+The power supply is plugged into the main body servo board (5V). The hands servo board will be addressed later.
 
 ### Alexa Setup
 Setting Up a Raspberry Pi 3B+ or 4 to run Amazon's [Alexa](https://developer.amazon.com/alexa).
@@ -36,11 +40,6 @@ We plan on adding many commands to Talus. With this addition we plan on setting 
 The list will be added here and finalized when we get to the stage of adding them.
 ###### Note:
 You can tell us your idea for Talus to do [here](https://docs.google.com/forms/d/e/1FAIpQLSeFa8XaVLIra4dBYN972fmorVdxVl_9EeBlFkYPPKFkGGHmSQ/viewform?usp=sf_link).
-
-### Raspberry Pi Wiring
-We have several new servo boards purchased. We have already taken apart the previous wiring. 
-The new servo boards are set up by servo number (Sets of 4). The servo board is plugged in on the Raspberry Pi GPIO (3.3V).
-The power supply is plugged into the main body servo board (5V). The hands servo board will be addressed later.
 
 ### Alexa Moving Motors
 After setting up all of the wiring, we will try and recreate a similar project to [this](https://www.instructables.com/id/Animate-a-Billy-Bass-Mouth-With-Any-Audio-Source/) for the movement.
