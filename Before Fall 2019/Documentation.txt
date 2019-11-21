@@ -1,9 +1,0 @@
-Notes:
- - Press Off for emergency stop.
- - In case of smoke or flashing lights, flip off all switches ( O )
-“New Demo Instructions”
- 1. Flip all switches on green box to ON ( - )
- 2. Press ON Button
- 3. Press T to move all joints (Takes about 40 seconds)
- 4. Press A to shake right hand (Takes about 15 seconds)
- 5. When done, press off and flip all green box switches to Off ( O )
