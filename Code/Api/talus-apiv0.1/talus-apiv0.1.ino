@@ -8,7 +8,7 @@
 
 //setting
 //max ammount of arguments
-const int ARGSNUM = 4;
+const int ARGSNUM = 5;
 //creates argument storage location
 String argArray[ARGSNUM + 1];
 
@@ -16,14 +16,14 @@ String argArray[ARGSNUM + 1];
 String tempString;
 int servonum;
 //function list
-String functionList[] = {"enableAll","disableAll","enablePin","disablePin","setServo","handOpen","handClose","wingsUp","wave","default" };
+String functionList[] = {"enableAll","disableAll","enablePin","disablePin","setServo","handOpen","handClose","wingsUp","wave","default","setHand" };
 //servo object
 Servo servos[8];
 
 void setup() {
 	//serial set up and timeout adjustment for quicker response
 	Serial.begin(9600);
-	Serial.setTimeout(20);
+	Serial.setTimeout(5);
 
 	//setup all pins as outputs
 	//with i and j there are two "for" loops running together
@@ -34,16 +34,17 @@ void setup() {
 		//starts at the jth servo and links/attaches it with the ith pin , then sets it to 90 degrees
 		servos[j].attach(i);
 		servos[j].write(90);
-		//increase j and i (i need to be incremented becuse the mosfet pin and servo pin arent the same) 
+		//increase j and i (i need to be incremented becuse the mosfet/enable pin and servo pin arent the same) 
 		j++;
 		i++;
-		//sets up the mosfet as output and enables it
+		//sets up the mosfet/enable pin as output and enables it
 		pinMode(i, OUTPUT);
 		digitalWrite(i, HIGH);
 	}
-	//servo 5 and 7 have different default locations compared to all the other servos
+	//servo 5 - 7 have different default locations compared to all the other servos
 	servos[5].write(150);
-	servos[7].write(0);
+	servos[6].write(90);
+	servos[7].write(90);
 	Serial.println("end of setup!");
 }
 
@@ -66,6 +67,7 @@ void loop() {
 	for (int i = 0; i < (sizeof(functionList) / sizeof(*functionList)); i++) {
 		if (argArray[0] == functionList[i]) {
 			tempint = i;
+			//Review: possible reenable this exit to speed up the code -Payton DePietro
 			//exit;
 		}
 	}
@@ -89,14 +91,17 @@ void loop() {
 		break;
 	case 2:
 		//this is the enablePin command
+		//addresses the on board pin number
 		digitalWrite(argArray[1].toInt(), HIGH);
 		break;
 	case 3:
 		//this is the  disabelPin command
+		//addresses the on board pin number
 		digitalWrite(argArray[1].toInt(), LOW);
 		break;
 	case 4:
 		//this is the setServo command
+		// addressed by the servo num ie 0-7
 		servonum = argArray[1].toInt();
 		servos[servonum].write(argArray[2].toInt());
 		break;
@@ -123,6 +128,7 @@ void loop() {
 		break;
 	case 8 :
 		//this is the wave command
+		//USE CAUTION WHEN USING
 		servos[6].write(180);
 		delay(500);
 		for (int i = 0; i < 2; i++) {
@@ -142,7 +148,15 @@ void loop() {
 		servos[4].write(45);
 		servos[5].write(150);
 		servos[6].write(90);
-		servos[7].write(0);
+		servos[7].write(90);
+		break;
+	case 10:
+    // this is the setHand command
+		servos[0].write(argArray[1].toInt());
+		servos[1].write(argArray[2].toInt());
+		servos[2].write(argArray[3].toInt());
+		servos[3].write(argArray[4].toInt());
+		servos[4].write(argArray[5].toInt());
 		break;
 	default:
 		break;
@@ -151,14 +165,17 @@ void loop() {
 	argArray[0] = "billybobjoe";
 }
 
+
+//breaks down the input from serial into an array of all the arguments and the command itself
 String * commandParser(String tempString){
 	//variables for later use
 	int j = 0;
 	int beginArgs = 0;
 	int endArgs = 0;
 	//temp array to store the seperation potins between args
-	int args[ARGSNUM + 1];
+	int args[ARGSNUM + 2];
 	// sets the start point of the args (has to be negative 1 for the math to work out later)
+	//Review: make it so this -1 isnt here anymore -Payton DePietro
 	args[j] = -1;
 	j++;
 	//loops throught all characters in the string being parsed, and looks for specific characters
@@ -184,7 +201,7 @@ String * commandParser(String tempString){
 		}
 	}
 	//goes throught all the save comma bracket and comma location and saves the string that is inbetween them for use in the code
-	for (int i = 0; i < j; i++) {
+	for (int i = 0; i < ARGSNUM+1; i++) {
 		argArray[i] = tempString.substring(args[i] + 1, args[i + 1]);
 	}
 	return argArray;
