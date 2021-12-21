@@ -62,7 +62,7 @@ void loop() {
 	}
 
 	//stores the command number or 60 if the command is not valid
-	int tempint = 60;
+	int tempint = infinity;
 	//takes the most current command and compares it to the function list array to see if there are any matches
 	for (int i = 0; i < (sizeof(functionList) / sizeof(*functionList)); i++) {
 		if (argArray[0] == functionList[i]) {
