@@ -1,24 +1,17 @@
 # Talus
-Totaly Atonomous Legitamately Use(less/ful) Robot
-## Short Term Goals 
-| Goal            									| Status   |
-| :-------------: 									| :-----:  |
-| [Rework Power Supply Case](#Rework-Power-Supply-Case)		| Inprogress |
-| [Bread Board Design](#Bread-Board-Design)    					| Completed  |
-| [Servo Control Foundation](#Servo-Control-Foundation)			| Inprogress  |
-| [Schematic Design](#Schematic-Design)	| Planned  |
-| [Servo Lable Schem](#Servo-Label-Schem)	| Planned  |
-| [RGB Eyes](#rgb-eyes)								| Planned  |
-| [Rebuild Right Arm](#Right-Arm) 						| Started  |
+Totally Autonomous Legitimately Useful System
 
-## Spring 2020 Goals
-To Be Determined
+***
 
----
----
-Note:
-more dexcriptions to come
+## Languages
+- API is coded in ArduinoIDE (basically C++)
 
+***
 
-### RGB Eyes
-We are planning on using RGB LED's behind ping pong balls for two uniquely addresable eyes.
+## Spring 2022 Goals
+- 3D print all missing body parts
+- Get a full set of working servos
+- Improve API functionality
+  ### Stretch Goals
+  - Work in inverse kinematics
+  - Implement a Raspberry PI for servo and voice control
