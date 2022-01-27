@@ -11,13 +11,17 @@
 
 int main()
 {
-    int i2c_bus
+    int i2c_bus;
+    int slave_addr;
 
     char* busPATH = (char*)"/dev/i2c-1";
     if ((i2c_bus = open(busPATH, 0_RDRW)) < 0) // Open and varify the i2c bus.
     {
         printf("Failed to open the i2c bus");
-        return;
+        return 0;
     }
+
+
+
     return 0;
 }
