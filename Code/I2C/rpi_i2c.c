@@ -8,11 +8,12 @@
 #include <stdio.h>          //io capabilities
 #include <TALUS_i2c.h>      //various stuff for talus
 
+#define MAX_SLAVE 8 //Maximum amount of slaves on program run
 
 int main()
 {
     int i2c_bus;
-    int slave_addr;
+    int slaveAddrs[MAX_SLAVE];
 
     char* busPATH = (char*)"/dev/i2c-1";
     if ((i2c_bus = open(busPATH, 0_RDRW)) < 0) // Open and varify the i2c bus.
@@ -20,6 +21,8 @@ int main()
         printf("Failed to open the i2c bus");
         return 0;
     }
+
+
 
 
 
