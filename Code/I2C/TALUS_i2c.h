@@ -3,6 +3,8 @@
 
 #include <stdint.h>         //fixed with variables
 
+#define MAX_BUFF 64
+
 struct test_package_struct
 {
     uint8_t funcNum;
