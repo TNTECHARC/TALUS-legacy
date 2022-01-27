@@ -1,4 +1,4 @@
-//Talus I2C Communication for Arduino
+//Talus I2C Communication client (Arduino)
 //Jim Moroney 2022
 
 #include <Wire.h> // the i2c library
