@@ -1,6 +1,17 @@
+//TALUS i2c communication standard library.
+
 #ifndef TALUS_I2C_H
 #define TALUS_I2C_H
 
+#ifdef __ARM__ //detect if this is being included on a rPi
+    #include <unistd.h>         //i2c library support
+    #include <fcntl.h>          //i2c library support
+    #include <sys/ioctl.h>      //i2c library support
+    #include <linux/i2c-dev.h>  //i2c library support
+    #include <stdio.h>          //io capabilities
+#else // else, it must be an arduino.
+    #include <Wire.h> // the i2c library
+#endif
 #include <stdint.h>         //fixed with variables
 
 #define MAX_BUFF 4
